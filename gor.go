@@ -115,7 +115,8 @@ outside:
 			if !ok {
 				break outside
 			}
-			fmt.Println("Err!", s)
+			//fmt.Println("Err!", s)
+			fmt.Println(s)
 		}
 	}
 	//fmt.Println("Finished")
