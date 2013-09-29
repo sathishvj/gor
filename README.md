@@ -48,15 +48,15 @@ alias gob="gor -b"
 ```
 gor -h
 ```
-gor will re-run/build/test/doc with previous arguments in the current directory.  Usage:
-	-b=false: to use build tool (default is run)
-	-c=false: to show go file for current directory
-	-d=false: to use test tool (default is run)
-	-h=false: to display this usage listing
-	-l=false: to list all entries
-	-r=false: to remove the entry corresponding to current directory
-	-t=false: to use test tool (default is run)
-	-x=false: to delete the current .gorrc
+> gor will re-run/build/test/doc with previous arguments in the current directory.  Usage:
+>	-b=false: to use build tool (default is run)
+>	-c=false: to show go file for current directory
+>	-d=false: to use test tool (default is run)
+>	-h=false: to display this usage listing
+>	-l=false: to list all entries
+>	-r=false: to remove the entry corresponding to current directory
+>	-t=false: to use test tool (default is run)
+>	-x=false: to delete the current .gorrc
 
 ## Testing
 Checked this only on Mac OS X and with single files. If you find any bugs, please raise an issue for this project.  Thank you.
