@@ -244,7 +244,7 @@ func getStdOutput(c chan string, p *bufio.Reader) {
 
 func usage() {
 	pgm := os.Args[0]
-	fmt.Printf("%s re-runs or re-builds  previously used go file in the current directory.  Usage:\n", pgm)
+	fmt.Printf("%s will re-run/build/test/doc with previous arguments in the current directory.  Usage:\n", pgm)
 	flag.PrintDefaults()
 	fmt.Printf("\n%s hello.go\n%s\n", pgm, pgm)
 	return
