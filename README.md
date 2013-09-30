@@ -2,9 +2,9 @@ gor
 ===
 
 ## Execute previous go command
-When learning go or running trials with small programs, one usually has a few different .go files in the same directory.  With this, just type gor and avoid retyping 'go run filename.go' each time.  
+When learning go or running trials with small programs, one usually has a few different .go files in the same directory.  With this utility, just type gor and avoid retyping 'go run filename.go' each time.  
 
-This program creates a .gorrc in your user directory that contains the last run/build/test file for your present working directory.  Thereafter, just run gor (or with -b/-t option for build and test respectively).  An entry exists per directory and per tool (run/build/test/doc) that you use.
+This program creates a .gorrc in your user directory that contains the last run/build/test/doc file for your present working directory.  After you do "gor filename.go" once, just run gor (or with -b/-t/-d option for build/test/doc respectively).  A persistent entry exists per directory and per tool (run/build/test/doc) that you use.  That is helpful when you are working in many directories.
 
 ## Installation
 ```
@@ -39,7 +39,8 @@ gor -b
 
 > this will re-build hello.go
 
-Tip: After using "gor -b" for the first time, you might want to alias gob so that you can use just gob each time.  Since alias cannot accept parameters though, for the first time you build a file, you will have to use "gor -b"
+Tip: You might want to alias gob="gor -b"  so that you can use just use gob to do builds. Similarly for doc and test, if you so wish.
+
 ```
 alias gob="gor -b"
 ```
