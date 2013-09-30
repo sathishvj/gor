@@ -20,7 +20,7 @@ func main() {
 	del := flag.Bool("x", false, "to delete the current .gorrc")
 	build := flag.Bool("b", false, "to use build tool (default is run)")
 	test := flag.Bool("t", false, "to use test tool (default is run)")
-	doc := flag.Bool("d", false, "to use test tool (default is run)")
+	doc := flag.Bool("d", false, "to use doc tool (default is run)")
 	flag.Parse()
 	anyFlags := *listAll || *help || *curr || *rem || *del
 
