@@ -11,7 +11,7 @@ This program creates a .gorrc in your user directory that contains the last run/
 go get github.com/sathishvj/gor
 ```
 
-> This will pull down the source and install the gor command in $GOROOT/bin
+> This will pull down the source and install the gor command in $GOPATH/bin
 
 ## Running gor
 Make sure that your PATH contains $GOPATH/bin.  Then use gor from any directory.
