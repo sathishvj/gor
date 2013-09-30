@@ -246,7 +246,11 @@ func usage() {
 	pgm := os.Args[0]
 	fmt.Printf("%s will re-run/build/test/doc with previous arguments in the current directory.  Usage:\n", pgm)
 	flag.PrintDefaults()
-	fmt.Printf("\n%s hello.go\n%s\n", pgm, pgm)
+	fmt.Printf("\n%s hello.go            #first time run\n", pgm)
+	fmt.Printf("%s                     #repeat run on same file\n", pgm)
+	fmt.Printf("%s -b hello.go         #first time build\n", pgm)
+	fmt.Printf("%s -b                  #repeat build on same file\n", pgm)
+	fmt.Printf("%s -c                  #show .gorrc entries for current dir\n", pgm)
 	return
 }
 
